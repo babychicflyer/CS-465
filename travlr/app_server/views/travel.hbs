@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dive Sites - Travlr Getaways</title>
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+<body>
+    <div id="background">
+        <div id="page">
+            {{> header}}
+            <div id="contents">
+                <div id="diving">
+                    <h1>TRAVEL</h1>
+                    <ul>
+                        {{#each trips}}
+                        <li>
+                            <img src="/images/{{this.image}}" alt="{{this.name}}"/>
+                            <div>
+                                <h2>{{this.name}}</h2>
+                                {{{this.description}}}
+                            </div>
+                        </li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+            {{> footer}}
+        </div>
+    </div>
+</body>
+</html>
