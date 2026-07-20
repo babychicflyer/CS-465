@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Travlr Getaways</title>
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+<body>
+    <div id="background">
+        <div id="page">
+            {{> header}}
+            <div id="contents">
+                <div class="box">
+                    <div>
+                        <div id="contact" class="body">
+                            <h1>Contact</h1>
+                            <form action="/" method="post">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row"><label for="contactName">Name:</label></th>
+                                            <td><input type="text" id="contactName" name="contactName" value="" class="txtfield"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><label for="contactEmail">Email:</label></th>
+                                            <td><input type="text" id="contactEmail" name="contactEmail" value="" class="txtfield"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><label for="contactSubject">Subject:</label></th>
+                                            <td><input type="text" id="contactSubject" name="contactSubject" value="" class="txtfield"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="txtarea"><label for="contactMessage">Message:</label></th>
+                                            <td><textarea id="contactMessage" name="contactMessage"></textarea></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><input type="submit" value="" class="btn" aria-label="Send message"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </form>
+                            <h2>Travlr Getaways</h2>
+                            <p>
+                                <span>Address:</span> 123 Lorem Ipsum Cove, Sed Ut City, LI 12345
+                            </p>
+                            <p>
+                                <span>Telephone Number:</span> 1-800-999-9999
+                            </p>
+                            <p>
+                                <span>Fax Number:</span> 1-800-111-1111
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{> footer}}
+        </div>
+    </div>
+</body>
+</html>
